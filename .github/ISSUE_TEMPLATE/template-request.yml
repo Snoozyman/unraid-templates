@@ -1,0 +1,24 @@
+name: Template Request
+description: Request a new Unraid template or report an issue with an existing one
+title: "template: "
+labels: [enhancement]
+body:
+  - type: input
+    id: app
+    attributes:
+      label: App name
+      placeholder: quefy
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What template do you need or what issue are you having?
+    validations:
+      required: true
+  - type: input
+    id: dockerhub
+    attributes:
+      label: Docker Hub or image URL
+      description: Link to the Docker image if applicable
