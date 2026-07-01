@@ -1,0 +1,25 @@
+<Container version="2">
+  <Name>quefy</Name>
+  <Repository>snoozyman/quefy:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Icon>https://raw.githubusercontent.com/Snoozyman/unraid-ca-templates/main/icon.svg</Icon>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <Overview>Multi-user YouTube, Spotify, and SoundCloud audio streaming rooms. Host creates a room, share the code, and guests queue songs.</Overview>
+  <Support>https://github.com/Snoozyman/quefy/issues</Support>
+  <Project>https://github.com/Snoozyman/quefy</Project>
+  <TemplateURL>https://raw.githubusercontent.com/Snoozyman/unraid-ca-templates/main/templates/quefy.xml</TemplateURL>
+  <Category>MediaApp:Music</Category>
+  <ExtraSearchTerms>youtube spotify soundcloud music streaming</ExtraSearchTerms>
+  <Requires>yt-dlp installed on host or use external proxy</Requires>
+  <License>MIT</License>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/quefy" Mode="rw" Description="Persistent data directory for cookies and config." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="PORT" Target="PORT" Default="80" Mode="" Description="HTTP port for the web interface." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="YT_DLP_COOKIES" Target="YT_DLP_COOKIES" Default="/data/cookies.txt" Mode="" Description="Path to Netscape-format cookies file for yt-dlp." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="SPOTIFY_CLIENT_ID" Target="SPOTIFY_CLIENT_ID" Default="" Mode="" Description="Spotify App Client ID (optional, for Spotify support)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SPOTIFY_CLIENT_SECRET" Target="SPOTIFY_CLIENT_SECRET" Default="" Mode="" Description="Spotify App Client Secret (optional, for Spotify support)." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="SPOTIFY_REDIRECT_URI" Target="SPOTIFY_REDIRECT_URI" Default="" Mode="" Description="Spotify OAuth redirect URI (optional)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SPOTIFY_MARKET" Target="SPOTIFY_MARKET" Default="US" Mode="" Description="Market code for Spotify search (ISO 3166-1 alpha-2, optional)." Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
