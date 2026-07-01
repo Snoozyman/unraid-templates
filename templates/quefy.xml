@@ -5,12 +5,12 @@
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Icon>https://raw.githubusercontent.com/Snoozyman/unraid-ca-templates/main/icon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/Snoozyman/unraid-templates/main/icon.svg</Icon>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Overview>Multi-user YouTube, Spotify, and SoundCloud audio streaming rooms. Host creates a room, share the code, and guests queue songs.</Overview>
   <Support>https://github.com/Snoozyman/quefy/issues</Support>
   <Project>https://github.com/Snoozyman/quefy</Project>
-  <TemplateURL>https://raw.githubusercontent.com/Snoozyman/unraid-ca-templates/main/templates/quefy.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Snoozyman/unraid-templates/main/templates/quefy.xml</TemplateURL>
   <Category>MediaApp:Music</Category>
   <ExtraSearchTerms>youtube spotify soundcloud music streaming</ExtraSearchTerms>
   <Requires>yt-dlp installed on host or use external proxy</Requires>

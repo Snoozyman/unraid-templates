@@ -1,16 +1,13 @@
-# Unraid CA Templates
+# Unraid Templates
 
-Community Applications template repository for [quefy](https://github.com/Snoozyman/quefy) — multi-user YouTube, Spotify, and SoundCloud audio streaming rooms.
+Community Applications template repository maintained by [Snoozyman](https://github.com/Snoozyman).
 
-## Installation
+## Templates
 
-1. In Unraid, go to **Apps** → **Settings**
-2. Under private repositories, add:
-   ```
-   https://github.com/Snoozyman/unraid-ca-templates
-   ```
-3. Click **Save**, then search for **quefy** in the Apps tab
+| App | Category | Description |
+|---|---|---|
+| [quefy](templates/quefy.xml) | MediaApp:Music | Multi-user YouTube, Spotify, and SoundCloud audio streaming rooms |
 
 ## Submission
 
-Submitting via [https://ca.unraid.net/submit](https://ca.unraid.net/submit).
+Submit new apps or updates via PR. Templates are auto-scanned by Community Applications every 2 hours.
