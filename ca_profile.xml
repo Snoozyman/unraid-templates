@@ -2,7 +2,10 @@
   <Profile>
     Docker templates for Unraid Community Applications. Currently maintaining tools for self-hosted media, streaming, and utilities.
   </Profile>
-  <Icon>https://raw.githubusercontent.com/Snoozyman/unraid-ca-templates/main/icon.svg</Icon>
-  <WebPage>https://github.com/Snoozyman/unraid-ca-templates</WebPage>
+  <Icon>https://raw.githubusercontent.com/Snoozyman/unraid-templates/main/icon.svg</Icon>
+  <WebPage>https://github.com/Snoozyman/unraid-templates</WebPage>
   <Forum>https://github.com/Snoozyman/quefy/issues</Forum>
+  <DonateLink>https://paypal.me/snoozyman</DonateLink>
+  <DonateText>If you like my work, consider donating.</DonateText>
 </CommunityApplications>
+
