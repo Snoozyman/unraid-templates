@@ -7,7 +7,7 @@
   <Privileged>false</Privileged>
   <Icon>https://raw.githubusercontent.com/Snoozyman/unraid-templates/main/icon.svg</Icon>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <Overview>Multi-user YouTube, Spotify, and SoundCloud audio streaming rooms. Host creates a room, share the code, and guests queue songs.</Overview>
+  <Overview>Multi-user YouTube, Spotify, and SoundCloud audio streaming rooms. Host creates a room, share the code — joiners queue songs, host's device plays the audio.</Overview>
   <Support>https://github.com/Snoozyman/quefy/issues</Support>
   <Project>https://github.com/Snoozyman/quefy</Project>
   <TemplateURL>https://raw.githubusercontent.com/Snoozyman/unraid-templates/main/templates/quefy.xml</TemplateURL>
