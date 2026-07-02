@@ -1,7 +1,7 @@
+<?xml version="1.0"?>
 <Container version="2">
   <Name>quefy</Name>
   <Repository>snoozyman/quefy:latest</Repository>
-  <Registry/>
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -15,11 +15,11 @@
   <ExtraSearchTerms>youtube spotify soundcloud music streaming</ExtraSearchTerms>
   <Requires>yt-dlp installed on host or use external proxy</Requires>
   <License>MIT</License>
-  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/quefy" Mode="rw" Description="Persistent data directory for cookies and config." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="PORT" Target="PORT" Default="80" Mode="" Description="HTTP port for the web interface." Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="YT_DLP_COOKIES" Target="YT_DLP_COOKIES" Default="/data/cookies.txt" Mode="" Description="Path to Netscape-format cookies file for yt-dlp." Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="SPOTIFY_CLIENT_ID" Target="SPOTIFY_CLIENT_ID" Default="" Mode="" Description="Spotify App Client ID (optional, for Spotify support)." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="SPOTIFY_CLIENT_SECRET" Target="SPOTIFY_CLIENT_SECRET" Default="" Mode="" Description="Spotify App Client Secret (optional, for Spotify support)." Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="SPOTIFY_REDIRECT_URI" Target="SPOTIFY_REDIRECT_URI" Default="" Mode="" Description="Spotify OAuth redirect URI (optional)." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="SPOTIFY_MARKET" Target="SPOTIFY_MARKET" Default="US" Mode="" Description="Market code for Spotify search (ISO 3166-1 alpha-2, optional)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/quefy" Mode="rw" Description="Persistent data directory for cookies and config." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quefy</Config>
+  <Config Name="PORT" Target="PORT" Default="80" Description="HTTP port for the web interface." Type="Variable" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="YT_DLP_COOKIES" Target="YT_DLP_COOKIES" Default="/data/cookies.txt" Description="Path to Netscape-format cookies file for yt-dlp." Type="Variable" Display="always" Required="true" Mask="false">/data/cookies.txt</Config>
+  <Config Name="SPOTIFY_CLIENT_ID" Target="SPOTIFY_CLIENT_ID" Default="" Description="Spotify App Client ID (optional, for Spotify support)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SPOTIFY_CLIENT_SECRET" Target="SPOTIFY_CLIENT_SECRET" Default="" Description="Spotify App Client Secret (optional, for Spotify support)." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="SPOTIFY_REDIRECT_URI" Target="SPOTIFY_REDIRECT_URI" Default="" Description="Spotify OAuth redirect URI (optional)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SPOTIFY_MARKET" Target="SPOTIFY_MARKET" Default="US" Description="Market code for Spotify search (ISO 3166-1 alpha-2, optional)." Type="Variable" Display="always" Required="false" Mask="false">US</Config>
 </Container>
